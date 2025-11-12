@@ -97,26 +97,44 @@
             color: #646464;
         }
 
-	@media (max-width: 700px) {
-  .container, .destaque, .tecnologia, .prof, .grafico-label, ul, ol {
-    font-size: 1.12em;
-    padding: 15px 6vw;
-  }
-  h1 { font-size: 2em; }
-  h2 { font-size: 1.25em; }
-  .grafico-bar { width: 90vw; height: 44px; }
-  .grafico { flex-direction: column; gap: 15px; }
-}
-
-@media (max-width: 420px) {
-  .container, .destaque, .tecnologia, .prof, .grafico-label, ul, ol {
-    font-size: 1.09em;
-    padding: 9px 2vw;
-  }
-  h1 { font-size: 1.5em; }
-  h2 { font-size: 1em; }
-  .grafico-bar { height: 32px; }
-}	
+			@media (max-width: 700px) {
+		  .container, .destaque, .tecnologia, .prof, .grafico-label, ul, ol {
+		    font-size: 1.12em;
+		    padding: 15px 6vw;
+		  }
+		  h1 { font-size: 2em; }
+		  h2 { font-size: 1.25em; }
+		  .grafico-bar { width: 90vw; height: 44px; }
+		  .grafico { flex-direction: column; gap: 15px; }
+		}
+		
+		@media (max-width: 420px) {
+		  .container, .destaque, .tecnologia, .prof, .grafico-label, ul, ol {
+		    font-size: 1.09em;
+		    padding: 9px 2vw;
+		  }
+		  h1 { font-size: 1.5em; }
+		  h2 { font-size: 1em; }
+		  .grafico-bar { height: 32px; }
+		}
+		
+				
+		.gform-wrap {
+		  position: relative;
+		  width: 100%;
+		  max-width: 800px;      /* opcional: limita a largura em desktops */
+		  margin: 0 auto;        /* centraliza em telas grandes */
+		  overflow: hidden;
+		  aspect-ratio: 3 / 5;   /* ajuste a proporção conforme seu formulário */
+		}
+		
+		.gform-wrap iframe {
+		  position: absolute;
+		  inset: 0;
+		  width: 100%;
+		  height: 100%;
+		  border: 0;
+		}	
     </style>
 </head>
 <body>
@@ -184,13 +202,18 @@
             	</h2>
         </div>
         
-        <div>
-        	 
-	  	  
+	   <div class="gform-wrap">
+	  <iframe
+	    src="https://docs.google.com/forms/d/e/1FAIpQLSfqOPENles4kLwuN8F_RR4u5ya1WyWKAG-YQct0-qAajoe9mw/viewform?embedded=true"
+	    frameborder="0"
+	    marginheight="0"
+	    marginwidth="0"
+	    loading="lazy"
+	    allowfullscreen
+	  ></iframe>
+		</div>
         
-        </div>
-        
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfqOPENles4kLwuN8F_RR4u5ya1WyWKAG-YQct0-qAajoe9mw/viewform?embedded=true" width="800" height="2590" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+       
 
         <footer>
             <em>Fonte: ONU, relatórios oficiais e especialistas do setor agroalimentar.</em>
